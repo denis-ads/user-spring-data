@@ -1,4 +1,4 @@
-Crm-Spring
+Exemplo do uso JPA com Spring
 ====================
 Exemplo que demonstra o uso tecnologia Spring Boot.
 
@@ -19,12 +19,12 @@ Utilizando Swagger Editor: http://editor.swagger.io
 Uso do Jmeter para testes integrados
 ---------------------
 
-* CrmEndpoint.jmx
+* UserEndpoint.jmx
 
 Monitoração
 ---------------------
 
- * [CRM](http://localhost:8080/crm/monitoring)
+ * [user]
  
 
 Definição projeto
@@ -47,7 +47,7 @@ Executando com maven
 
 #### Maven
 
-1. Crm-spring:
+1. user-spring:
 
 			
 			mvn spring-boot:run
@@ -56,29 +56,3 @@ Executando com maven
 ### Executando fat jar.
 
 1. java -jar ..... 
-
-
-
-instalação REDIS Centos
-
-https://github.com/MSOpenTech/redis/releases
-https://examples.javacodegeeks.com/enterprise-java/spring/spring-data-redis-example-2/
-https://gist.github.com/nghuuphuoc/7801123
-
-// --- or using yum ---
-$ rpm -Uvh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
-$ rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
-
-$ yum --enablerepo=remi,remi-test install redis
-
-teste
-	redis-cli ping
-
-Listening Port Of Redis Server
-[root@localhost ~]# ss -nlp|grep redis
-tcp    LISTEN     0      128            127.0.0.1:6379                  *:*      users:(("redis-server",19706,4))
-
-Two important redis server configuration file’s path
-1. /etc/redis.conf
-2. /etc/redis-sentinel.conf
-

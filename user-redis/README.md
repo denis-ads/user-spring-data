@@ -1,4 +1,4 @@
-Crm-Spring
+Exemplo uso de Spring com Redis
 ====================
 Exemplo que demonstra o uso tecnologia Spring Boot.
 
@@ -11,10 +11,12 @@ Esse projeto exemplo Spring Boot.
 Docker mongp
 ------------
 
-lembra de dar permissao de execução para o arquivo docker-entrypoint.sh
+Lembra de dar permissao de execução para o arquivo docker-entrypoint.sh.
+Utilizar crase antes do pwd(`)
 
 cd {projeto}/docker
 docker build -t redis --file `pwd`/Dockerfile `pwd`
+
 
 docker run --name redis -d redis
 
