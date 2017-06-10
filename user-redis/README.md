@@ -8,7 +8,7 @@ Introdução
 
 Esse projeto exemplo Spring Boot.
 
-Docker mongp
+Docker Redis
 ------------
 
 Lembra de dar permissao de execução para o arquivo docker-entrypoint.sh.
@@ -38,12 +38,12 @@ Utilizando Swagger Editor: http://editor.swagger.io
 Uso do Jmeter para testes integrados
 ---------------------
 
-* CrmEndpoint.jmx
+* UserEndpoint.jmx
 
 Monitoração
 ---------------------
 
- * [CRM](http://localhost:8080/crm/monitoring)
+ * 
  
 
 Definição projeto
